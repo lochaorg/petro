@@ -58,3 +58,4 @@ typings/
 .env
 
 coin/truffle.js
+build/

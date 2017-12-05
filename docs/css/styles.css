@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  background-color: #65a3d4;
+}
+
+a:link    { color: #c00 }  /* unvisited links */
+a:visited { color: #0c0 }  /* visited links   */
+a:hover   { color: #00c }  /* user hovers     */
+a:active  { color: #ccc }  /* active links    */
+
+figure {
+  margin: 0;
+}
+
+header {
+  position: absolute;
+  left: 2em;
+  top: 2em;
+}
+
+.main-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.first{
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.first:before {
+  content: '';
+  background: linear-gradient(transparent,#65a3d4);
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo-figure {
+  width: 250px;
+}
+
+.logo-figure .logo{
+  width: 100%;
+}
+.second {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.third-wrapper {
+  background: #fff;
+  padding-bottom: 2em;
+}
+
+.third{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title, .subtitle-top{
+  color: #FFF;
+  margin: .5em 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.59);
+  text-align: center;
+}
+
+.subtitle {
+  color: #FFF;
+  margin: .5em 0;
+  font-weight: 400;
+  background-color: #65a3d4;
+  padding: 1em;
+  border-radius: 5px;
+  text-shadow: none;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.petro-cta {
+  display: flex;
+  border: solid 1px #FFF;
+  padding: 1em 2em;
+  border-radius: 23px;
+  background-color: #FFF;
+  color: #000;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.petro-cta:hover{
+  cursor: pointer;
+}
+
+.section-title{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2em;
+  font-size: 28px;
+  color: #FFF;
+  text-shadow: 1px 1px 2px #797979
+}
+
+.benefits-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.benefit{
+  width: calc(90% - 1em);
+  padding: .5em;
+  text-align: center
+}
+
+.benefit .fa {
+  font-size: 75px;
+  margin-bottom: .25em;
+  color: #cecece;
+}
+
+.benefit .benefit-title{
+  color: #FFF;
+  /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.59);*/
+  font-size: 18px;
+  text-align: center;
+  margin: .5em 0;
+}
+
+.benefit .benefit-description {
+  color: #e8e8e8;
+  /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.59);*/
+  text-align: center;
+  margin: .5em 0;
+  line-height: 1.5;
+}
+
+@media all and (min-width: 768px) {
+  .benefit{
+    width: calc(30% - 1em);
+    padding: .5em;
+    text-align: center
+  }
+}
